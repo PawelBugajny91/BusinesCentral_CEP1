@@ -21,8 +21,6 @@ public class AresEvent implements java.io.Serializable {
 
 	private java.lang.Long time;
 
-	private java.lang.String status;
-
 	public AresEvent() {
 	}
 
@@ -50,20 +48,11 @@ public class AresEvent implements java.io.Serializable {
 		this.time = time;
 	}
 
-	public java.lang.String getStatus() {
-		return this.status;
-	}
-
-	public void setStatus(java.lang.String status) {
-		this.status = status;
-	}
-
 	public AresEvent(java.lang.Long id, java.lang.Long duration,
-			java.lang.Long time, java.lang.String status) {
+			java.lang.Long time) {
 		this.id = id;
 		this.duration = duration;
 		this.time = time;
-		this.status = status;
 	}
 
 }
