@@ -12,7 +12,6 @@ rule "PredictedBlinding"
 	then
 		AlertEvent fact0 = new AlertEvent();
 		fact0.setDuration( ares.duration );
-		fact0.setStatus( predicted blinding );
 		fact0.setTime( ares.time );
 		insertLogical( fact0 );
 end
