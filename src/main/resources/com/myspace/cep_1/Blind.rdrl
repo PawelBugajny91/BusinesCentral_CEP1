@@ -1,0 +1,9 @@
+package com.myspace.cep_1;
+
+import java.lang.Number;
+
+rule "Blind"
+	dialect "mvel"
+	when
+	then
+end
