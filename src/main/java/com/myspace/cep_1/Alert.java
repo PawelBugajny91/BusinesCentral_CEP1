@@ -8,7 +8,7 @@ package com.myspace.cep_1;
 @org.kie.api.definition.type.Role(org.kie.api.definition.type.Role.Type.EVENT)
 @org.kie.api.definition.type.Timestamp("time")
 @org.kie.api.definition.type.Duration("duration")
-public class Alert implements java.io.Serializable {
+public class AlertEvent implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -23,7 +23,7 @@ public class Alert implements java.io.Serializable {
 
 	private java.lang.String status;
 
-	public Alert() {
+	public AlertEvent() {
 	}
 
 	public java.lang.Long getId() {
@@ -58,7 +58,7 @@ public class Alert implements java.io.Serializable {
 		this.status = status;
 	}
 
-	public Alert(java.lang.Long id, java.lang.Long duration,
+	public AlertEvent(java.lang.Long id, java.lang.Long duration,
 			java.lang.Long time, java.lang.String status) {
 		this.id = id;
 		this.duration = duration;
