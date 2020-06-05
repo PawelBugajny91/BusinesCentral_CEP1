@@ -1,1 +1,5 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="Stream" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.*">
+    <ksession name="" type="stateful" default="true" clockType="pseudo"/>
+  </kbase>
+</kmodule>
