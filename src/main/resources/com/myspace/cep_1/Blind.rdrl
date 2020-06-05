@@ -12,5 +12,6 @@ rule "Blind"
 		AlertEvent fact0 = new AlertEvent();
 		fact0.setDuration( ares.duration );
 		fact0.setTime( ares.time );
+		fact0.setStatus( "blinding" );
 		insertLogical( fact0 );
 end
