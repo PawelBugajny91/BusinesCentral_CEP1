@@ -2,7 +2,7 @@ package com.myspace.cep_1;
 
 import java.lang.Number;
 
-rule "PartiaPredictedBlindingB"
+rule "PartialPredictedBlindingA"
 	dialect "mvel"
 	activation-group "cep"
 	salience 10
