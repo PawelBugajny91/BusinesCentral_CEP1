@@ -14,4 +14,9 @@ rule "Blind"
 		fact0.setDuration( ares.duration );
 		fact0.setStatus( blinding );
 		insertLogical( fact0 );
+		Alert fact1 = new Alert();
+		fact1.setDuration( ares.duration );
+		fact1.setStatus( blinding );
+		fact1.setTime( ares.time );
+		insert( fact1 );
 end
