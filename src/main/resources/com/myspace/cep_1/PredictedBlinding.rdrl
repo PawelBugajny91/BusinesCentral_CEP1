@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "PredictedBlinding"
 	dialect "mvel"
 	activation-group "cep"
-	salience 3
+	salience 2
 	when
 		ares : AresEvent( ) over window:time (2s)
 		fd : FDEvent( this includes ares ) over window:time (2s)
