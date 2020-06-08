@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "AresUpdate"
 	dialect "mvel"
 	activation-group "ares"
-	salience 2
+	salience 3
 	when
 		asa : ASA1311Z( value == 1 ) over window:time (65s)
 		ares : AresEvent( this before asa ) over window:time (1m)
