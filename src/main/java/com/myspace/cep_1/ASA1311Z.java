@@ -5,31 +5,53 @@ package com.myspace.cep_1;
  */
 
 @javax.persistence.Entity
+@org.kie.api.definition.type.Role(org.kie.api.definition.type.Role.Type.EVENT)
+@org.kie.api.definition.type.Timestamp("time")
 public class ASA1311Z implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ASA1311Z_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "ASA1311Z_ID_SEQ", name = "ASA1311Z_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ASA1311Z_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "ASA1311Z_ID_SEQ", name = "ASA1311Z_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public ASA1311Z() {
-    }
-    
-    public ASA1311Z(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Long time;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Integer value;
 
+	public ASA1311Z() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.Long getTime() {
+		return this.time;
+	}
+
+	public void setTime(java.lang.Long time) {
+		this.time = time;
+	}
+
+	public java.lang.Integer getValue() {
+		return this.value;
+	}
+
+	public void setValue(java.lang.Integer value) {
+		this.value = value;
+	}
+
+	public ASA1311Z(java.lang.Long id, java.lang.Long time,
+			java.lang.Integer value) {
+		this.id = id;
+		this.time = time;
+		this.value = value;
+	}
 
 }
