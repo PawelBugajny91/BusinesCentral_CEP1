@@ -5,5 +5,10 @@ import java.lang.Number;
 rule "SetAresEvent"
 	dialect "mvel"
 	when
+		asa : ASA1311Z( ) over window:time (65s)
 	then
+		AresEvent fact0 = new AresEvent();
+		fact0.setTime( asa.time );
+		fact0.setDuration( 60 );
+		insertLogical( fact0 );
 end
