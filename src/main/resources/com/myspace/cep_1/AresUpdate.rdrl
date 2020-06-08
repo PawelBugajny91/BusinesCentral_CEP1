@@ -7,7 +7,7 @@ rule "AresUpdate"
 	activation-group "ares"
 	salience 3
 	when
-		ares : AresEvent( ) over window:time (5s)
+		ares : AresEvent( ) over window:time (65s)
 		asa : ASA1311Z( this after ares ) over window:time (65)
 	then
 		modify( ares ) {
