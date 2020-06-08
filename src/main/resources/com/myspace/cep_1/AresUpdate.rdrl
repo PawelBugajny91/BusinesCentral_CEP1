@@ -8,7 +8,7 @@ rule "AresUpdate"
 	salience 2
 	when
 		asa : ASA1311Z( value == 1 ) over window:time (65s)
-		ares : AresEvent( this before asa ) over window:time (65s)
+		ares : AresEvent( this before asa ) over window:time (1m)
 	then
 		modify( ares ) {
 				setDuration( asa.time - ares.time )
