@@ -1,0 +1,9 @@
+package com.myspace.cep_1;
+
+import java.lang.Number;
+
+rule "SetAresEvent"
+	dialect "mvel"
+	when
+	then
+end
