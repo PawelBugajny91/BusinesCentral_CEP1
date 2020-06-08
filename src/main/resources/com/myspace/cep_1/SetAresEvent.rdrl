@@ -4,6 +4,8 @@ import java.lang.Number;
 
 rule "SetAresEvent"
 	dialect "mvel"
+	activation-group "ares"
+	salience 1
 	when
 		asa : ASA1311Z( ) over window:time (65s)
 	then
