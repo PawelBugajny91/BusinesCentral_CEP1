@@ -7,7 +7,7 @@ rule "SetAresEvent"
 	activation-group "ares"
 	salience 1
 	when
-		asa : ASA1311Z( value == 1 ) over window:time (65s)
+		asa : ASA1311Z( value == 1 ) over window:time (6s)
 	then
 		AresEvent fact0 = new AresEvent();
 		fact0.setTime( asa.time );
