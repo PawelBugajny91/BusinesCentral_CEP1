@@ -7,6 +7,7 @@ package com.myspace.cep_1;
 @javax.persistence.Entity
 @org.kie.api.definition.type.Role(org.kie.api.definition.type.Role.Type.EVENT)
 @org.kie.api.definition.type.Timestamp("time")
+@org.kie.api.definition.type.Expires("1d")
 public class ASA1311Z implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
