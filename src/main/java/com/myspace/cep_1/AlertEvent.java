@@ -8,6 +8,7 @@ package com.myspace.cep_1;
 @org.kie.api.definition.type.Role(org.kie.api.definition.type.Role.Type.EVENT)
 @org.kie.api.definition.type.Timestamp("time")
 @org.kie.api.definition.type.Duration("duration")
+@org.kie.api.definition.type.Expires("2d")
 public class AlertEvent implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
