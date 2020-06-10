@@ -13,4 +13,8 @@ rule "AresUpdate"
 		modify( ares ) {
 				setDuration( asa.time-ares.time )
 		}
+		AresEvent fact0 = new AresEvent();
+		fact0.setTime( ares.time );
+		fact0.setDuration( asa.time-ares.time );
+		insertLogical( fact0 );
 end
