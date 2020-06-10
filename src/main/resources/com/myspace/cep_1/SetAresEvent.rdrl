@@ -13,5 +13,5 @@ rule "SetAresEvent"
 		AresEvent fact0 = new AresEvent();
 		fact0.setTime( asa.time );
 		fact0.setDuration( 35 );
-		insert( fact0 );
+		insertLogical( fact0 );
 end
