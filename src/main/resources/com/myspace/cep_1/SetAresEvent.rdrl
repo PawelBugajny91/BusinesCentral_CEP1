@@ -14,8 +14,4 @@ rule "SetAresEvent"
 		fact0.setTime( asa.time );
 		fact0.setDuration( 35 );
 		insert( fact0 );
-		AlertEvent fact1 = new AlertEvent();
-		fact1.setTime( asa.time-15 );
-		fact1.setDuration( 69 );
-		insertLogical( fact1 );
 end
