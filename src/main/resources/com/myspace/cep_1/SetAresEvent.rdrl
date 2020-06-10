@@ -6,6 +6,7 @@ rule "SetAresEvent"
 	dialect "mvel"
 	activation-group "ares"
 	salience 1
+	no-loop true
 	when
 		asa : ASA1311Z( value == 1 ) over window:time (2m)
 	then
