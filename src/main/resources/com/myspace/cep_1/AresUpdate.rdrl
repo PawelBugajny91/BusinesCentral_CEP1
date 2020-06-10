@@ -14,6 +14,6 @@ rule "AresUpdate"
 		AresEvent fact0 = new AresEvent();
 		fact0.setTime( ares.time );
 		fact0.setDuration( asa.time-ares.time );
-		insert( fact0 );
+		insertLogical( fact0 );
 		retract( ares );
 end
