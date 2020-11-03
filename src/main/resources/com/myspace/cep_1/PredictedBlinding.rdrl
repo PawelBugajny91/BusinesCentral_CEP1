@@ -8,7 +8,7 @@ rule "PredictedBlinding"
 	salience 2
 	when
 		BE : BlindingEvent( ) over window:time (2m)
-		fd : FDEvent( this includes ares ) over window:time (2m)
+		fd : FDEvent( this includes BE ) over window:time (2m)
 	then
 		AlertEvent fact0 = new AlertEvent();
 		fact0.setDuration( BEduration );
