@@ -5,7 +5,6 @@
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
         <class>com.myspace.cep_1.Alert</class>
         <class>com.myspace.cep_1.FDEvent</class>
-        <class>com.myspace.cep_1.ASA1311Z</class>
         <class>com.myspace.cep_1.BlindingEvent</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
