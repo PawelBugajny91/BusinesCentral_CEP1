@@ -11,7 +11,7 @@ rule "PredictedBlinding"
 		fd : FDEvent( this includes BE ) over window:time (2m)
 	then
 		AlertEvent fact0 = new AlertEvent();
-		fact0.setDuration( BEduration );
+		fact0.setDuration( BE.duration );
 		fact0.setTime( BE.time );
 		fact0.setStatus( "predicted blinding" );
 		insertLogical( fact0 );
