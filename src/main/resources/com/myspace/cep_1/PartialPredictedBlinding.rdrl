@@ -11,8 +11,8 @@ rule "PartialPredictedBlinding"
 		( FDEvent( this during BE ) over window:time (2m) or FDEvent( this overlaps BE ) over window:time (2m) or FDEvent( this overlappedby BE ) over window:time (2m) )
 	then
 		AlertEvent fact0 = new AlertEvent();
-		fact0.setDuration( ares.duration );
-		fact0.setTime( ares.time );
+		fact0.setDuration( BE.duration );
+		fact0.setTime( BE.time );
 		fact0.setStatus( "partial predicted blinding" );
 		insertLogical( fact0 );
 end
