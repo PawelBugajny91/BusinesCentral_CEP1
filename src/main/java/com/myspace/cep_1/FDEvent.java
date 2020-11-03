@@ -13,7 +13,7 @@ public class FDEvent implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ALERT_ID_GENERATOR")
+	@javax.persistence.GeneratedValue(generator = "ALERT_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(sequenceName = "ALERT_ID_SEQ", name = "ALERT_ID_GENERATOR")
 	private java.lang.Long id;
@@ -21,6 +21,8 @@ public class FDEvent implements java.io.Serializable {
 	private java.lang.Long duration;
 
 	private java.lang.Long time;
+
+	private java.lang.String status;
 
 	public FDEvent() {
 	}
@@ -49,11 +51,20 @@ public class FDEvent implements java.io.Serializable {
 		this.time = time;
 	}
 
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
 	public FDEvent(java.lang.Long id, java.lang.Long duration,
-			java.lang.Long time) {
+			java.lang.Long time, java.lang.String status) {
 		this.id = id;
 		this.duration = duration;
 		this.time = time;
+		this.status = status;
 	}
 
 }
