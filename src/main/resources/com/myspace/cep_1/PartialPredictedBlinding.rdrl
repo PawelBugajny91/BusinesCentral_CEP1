@@ -7,8 +7,8 @@ rule "PartialPredictedBlinding"
 	activation-group "cep"
 	salience 3
 	when
-		ares : AresEvent( ) over window:time (2m)
-		( FDEvent( this during ares ) over window:time (2m) or FDEvent( this overlaps ares ) over window:time (2m) or FDEvent( this overlappedby ares ) over window:time (2m) )
+		BE : BlindingEvent( ) over window:time (2m)
+		( FDEvent( this during BE ) over window:time (2m) or FDEvent( this overlaps BE ) over window:time (2m) or FDEvent( this overlappedby BE ) over window:time (2m) )
 	then
 		AlertEvent fact0 = new AlertEvent();
 		fact0.setDuration( ares.duration );
