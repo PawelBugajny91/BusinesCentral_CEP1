@@ -1,1 +1,1 @@
-'AlertEvent.status' : ['blinding', 'predicted blinding', 'partial predicted blinding']
+'AlertEvent.status' : ['blinding', 'predicted_blinding', 'partial_predicted_blinding']
