@@ -13,6 +13,6 @@ rule "PartialPredictedBlinding"
 		AlertEvent fact0 = new AlertEvent();
 		fact0.setDuration( BE.duration );
 		fact0.setTime( BE.time );
-		fact0.setStatus( "partial predicted blinding" );
+		fact0.setStatus( "predicted_blinding" );
 		insertLogical( fact0 );
 end
